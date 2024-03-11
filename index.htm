@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FORM VALIDATION</title>
+</head>
+<body>
+  <div class="container">
+    <form id="form">
+          <h1><b>Register</b></h1>
+          <div class="input-cntrl">
+             
+            <i class='bx bxs-user'></i>
+             <label for="fullname">Full Name:</label>
+             <input type="text" id="fname" placeholder="Enter your name">
+             <span style="color: red;" id="name_error"></span>
+
+          </div>
+
+
+          <div class="input-cntrl">
+
+            <i class='bx bx-envelope'></i>
+            <label for="email">Email:</label>
+             <input type="text" id="email" placeholder="Enter your email">
+             <span style="color: red;" id="email_error"></span>  
+
+         </div>
+
+
+         <div class="input-cntrl">
+
+            <i class='bx bxs-phone'></i>
+            <label for="phn_number">Phone Number:</label>
+            <input type="text" id="phn_number"  placeholder="Enter your Phone number">
+            <span style="color: red;" id="phn_error"></span>  
+
+         </div>
+
+
+         <div class="input-cntrl">
+             
+            <i class='bx bx-lock-alt'></i>
+            <label for="pswd">Password:</label>
+            <input type="text" id="pswd" placeholder="Enter your Password">
+            <span style="color: red;" id="pass_error"></span>  
+
+         </div>
+
+
+         <div class="input-cntrl">
+           
+          <i class='bx bx-lock-alt'></i>
+           <label for="cn_pswd">Confirm Password:</label>
+           <input type="text" id="cn_pswd" name="cn-pswd" placeholder="confirm your Password">
+           <span style="color: red;" id="cn_pass_error"></span>  
+
+         </div>
+           <button  type="submit">sign up</button>
+    </form>
+  </div> 
+  <script src="script.js"></script>
+</body>
+</html>

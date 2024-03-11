@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    background-position: center; 
+    align-items: center;
+    background-image: url("images/bg.webp");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-blend-mode: overlay;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+.container{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    border-radius: 10px;
+    padding-inline: 60px;
+    padding-block: 20px;
+    color: aliceblue;
+    background-color:transparent; /* (or)===>   rgba(255, 255, 255, 0.15)*/
+    backdrop-filter:blur(2px);
+    border: 2px solid rgb(103, 100, 100);
+}
+form >h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 4px;
+    margin:10px;
+    border-radius: 2px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    background:transparent;
+    color:white;
+}
+ label{
+    margin-top: 20px;
+}
+.input-cntrl>i{
+    position:absolute;
+    top:21px;
+    right: 0;
+    font-size: 18px;
+}
+.input-cntrl{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgb(43, 160, 237);
+    font-size: medium;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(74, 173, 240);
+}
+
+@media only screen and (max-width: 500px){
+
+    form {
+        border-radius: 10px;
+        padding-inline: 20px;
+        padding-block: 10px;
+        color: aliceblue;
+        background-color:transparent; 
+        backdrop-filter:blur(2px);
+        border: 2px solid rgb(103, 100, 100);
+    }
+    form >h1{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+    label{
+        margin-top: 20px;
+        
+    }
+
+}
+
+@media only screen and (min-width: 500px)and (max-width:1440px){
+    form {
+        padding-inline: 80px;
+        padding-block: 30px;
+    }
+    form >h1{
+        font-size: 35px;
+    }
+    input {
+        font-size: 15px;
+    }
+    label{
+        font-size: 18px;
+    }
+    
+}
+
+
